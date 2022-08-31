@@ -13,6 +13,14 @@ describe('removeDuplicates', () => {
       expect(result).toBe(expected);
       expect(nums.slice(0, result)).toEqual([]);
     });
+    it('should remove duplicates from a sorted one array', () => {
+      const nums: number[] = [1];
+      const expected = 1;
+      const result = removeDuplicates(nums);
+      expect(result).toBe(expected);
+      expect(nums.slice(0, result)).toEqual([1]);
+    });
+
 });
 
 
